@@ -1,0 +1,364 @@
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.get {
+    font-size: 18px;
+    color: #FFFFFF;
+    background: linear-gradient(-45deg, #9890e3, #b1f4cf);
+    animation: gradient 3s ease infinite;
+    background-size: 300%;
+    padding: 17px 28px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header_logo {
+    display: flex;
+}
+
+.header_logo p {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2B292D;
+}
+
+.header_logo span {
+    font-weight: 700;
+}
+
+.header_nav {
+    display: flex;
+}
+
+.header_nav_list {
+    display: flex;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+
+.header_nav_list li:hover {
+    font-weight: 700;
+}
+
+.header_nav_list li a {
+    text-decoration: none;
+    color: #2B292D;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    min-height: 550px;
+    padding-top: 80px;
+    background-color: #F9D9EB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.title img {
+    position: absolute;
+    left: 40%;    
+    top: 25%;
+    z-index: -1;
+}
+
+.title h1 {
+    max-width: 750px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 78px;
+    /* margin: 0; */
+    letter-spacing: -0.5px;
+}
+
+.title__text {
+    max-width: 460px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.title__but {
+    margin-top: 58px;
+}
+
+.title__but .more {
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    color: #3040C4;
+    padding: 17px 28px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.offers_item {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+
+.offers_item:nth-child(2) {
+    margin: 0 10px;
+}
+
+.offers_element {
+    max-width: 340px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.offers_element:hover {
+    cursor: pointer;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+    border-radius: 8px; 
+    border-top: none;    
+}
+
+.offers_element a {
+    color: #3041C4;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.audience {
+    background-color: #00A1C6;
+    min-height: 880px;
+}
+
+.audience_text {
+    max-width: 560px;
+    margin: auto;
+    text-align: center;
+}
+
+.audience_text .subtittle {
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 100px;
+}
+
+.audience_text h2,
+.advantages_description h2 {
+    font-size: 56px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.audience .description,
+.advantages_description .descr {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 30px;
+}
+
+.audience__img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 170px;
+}
+
+.audience__img_item {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.audience__img_item:hover * {
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.audience__img_item:hover {
+    background: #3141C5;
+    transition: 0.5s;
+}
+
+.audience__img_item p:hover {
+    color: #FFFFFF;
+}
+
+.audience__img_item p {
+    font-weight: 700;
+    font-size: 22px;
+    color: #2B292D;
+}
+
+.advantages {
+    padding: 150px 0;
+}
+
+.advantages_item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantages_description p {
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #807F81;
+}
+
+.advantages_description button {
+    margin-top: 40px;
+}
+
+.promo {
+    background: #F4F5F7;
+}
+
+.promo__item {
+    display: flex;
+    justify-content: space-around;
+    padding: 73px 0;
+}
+.promo__item_element {
+    max-width: 550px;
+}
+
+.promo__item_element h3 {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.25px;
+}
+
+.promo__item_element p {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.promo__item_element form input {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #2B292D;
+    font-size: 18px;
+    height: 48px;
+    width: 65%;
+}
+
+/* .footer__top {
+    display: flex;
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_item_descr {
+    line-height: 26px;
+    margin: 25px 0;
+    margin-right: 120px;
+    max-width: 360px;
+}
+
+.footer_item_descr + a {
+    margin-right: 10px;
+}
+
+.footer__top ul li:first-child {
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 0;
+}
+
+footer hr {
+    background: #2B292D;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
+
+.footer__bot {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.footer__bot a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    color: rgba(43, 41, 45, 0.6);
+} */
+
+.footer_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.footer_logo {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    row-gap: 15px;
+}
+
+.footer_descr {
+    display: flex;
+    margin-top: 10px;
+
+}
+.footer_list ul li:nth-child(1) {
+    font-weight: 700;
+}
+
+.footer_link a{
+    color: #807F81;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.footer_icons {
+    justify-self: end;
+
+}
+.footer_icons a {
+    margin-left: 10px;
+}
